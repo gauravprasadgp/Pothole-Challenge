@@ -1,0 +1,20 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+  <div id="map_canvas">
+
+  </div>
+  <p><b>Drag the red marker to mark the Pothole location.</b></p>
+  <button ion-button (click)="presentActionSheet()">Proceed to take Image &nbsp;
+    <ion-icon name="camera"></ion-icon>
+  </button>
+  <button *ngIf="show">
+    <ion-icon name="information" (click)="dummyfunc()"></ion-icon>
+  </button>
+</ion-content>

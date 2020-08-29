@@ -1,0 +1,40 @@
+<!--
+  Generated template for the FormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Report Pothole </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="formgroup">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>
+          Title
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="title" formControlName="titl"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>
+          Description
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="desc" formControlName="de"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label>Authority</ion-label>
+        <ion-select [(ngModel)]="authority" formControlName="auth">
+          <ion-option>Nagar Nigam</ion-option>
+          <ion-option>Municipal Committee</ion-option>
+          <ion-option>Local Minister</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </form>
+  <button ion-button (click)="Maps()" full [disabled]="!formgroup.valid">Add Location of pothole</button>
+</ion-content>

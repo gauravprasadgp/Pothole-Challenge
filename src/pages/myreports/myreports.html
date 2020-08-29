@@ -1,0 +1,29 @@
+<!--
+  Generated template for the MyreportsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>My reports</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let d of data">
+    <ion-card-header>
+      {{d.title}}
+    </ion-card-header>
+    <ion-card-content>
+      <img src="http://34.93.191.211/image/{{d.picture}}">
+      {{d.status}}
+      <br/>
+      {{d.authority}}
+      <br/>
+      {{d.description}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

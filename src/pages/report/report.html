@@ -1,0 +1,40 @@
+
+
+<!-- <ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Pothole Challenge</ion-title>
+
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+
+  <div id="head">
+    Pothole <br/> Challenge
+  </div>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>    <button ion-button  class="butn" block (click)="form()">Report pothole &nbsp; <ion-icon name="warning"></ion-icon></button>     </ion-col>
+      <ion-col>     <button ion-button  class="butn" block (click)="myreports()">View Reports &nbsp;<ion-icon name="eye"></ion-icon></button>  </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>     <button ion-button  class="butn" block (click)="credits()">Wallet &nbsp;
+        <ion-icon name="card"></ion-icon>
+      </button>     </ion-col>
+      <ion-col> <button ion-button block class="butn" (click) = "logout()"> Logout  &nbsp;
+        <ion-icon name="exit" ></ion-icon>
+      </button></ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+
+  <div id="center">
+    
+  </div>
+
+</ion-content>

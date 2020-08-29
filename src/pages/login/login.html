@@ -1,0 +1,27 @@
+
+
+<ion-content padding>
+
+  <div id="head">
+    POTHOLE <br/> Challenge
+  </div>
+  <ion-list id="center">
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="pass"></ion-input>
+    </ion-item>
+    <br/>
+    <button ion-button block round (click) = "login()">Login</button>
+    <button ion-button clear (click)="signup()" >New User, Signup</button>
+  
+  </ion-list>
+
+
+
+</ion-content>
